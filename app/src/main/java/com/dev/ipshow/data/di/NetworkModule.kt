@@ -1,7 +1,6 @@
 package com.dev.ipshow.data.di
 
 import com.dev.ipshow.data.service.ApiService
-import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

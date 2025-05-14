@@ -1,7 +1,6 @@
 package com.dev.ipshow.ui.screens
 
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -27,7 +26,7 @@ fun MainScreen(innerPadding: PaddingValues) {
 
     val ip by mainViewModel.ipAddressState.collectAsState()
 
-    CenteredIPScreen(
+    IpContent(
         ip = ip ?: "",
         modifier = Modifier.padding(innerPadding)
     )
@@ -35,7 +34,7 @@ fun MainScreen(innerPadding: PaddingValues) {
 
 
 @Composable
-fun CenteredIPScreen(ip: String, modifier: Modifier = Modifier) {
+fun IpContent(ip: String, modifier: Modifier = Modifier) {
     Box(
         modifier = modifier
             .fillMaxSize(),
